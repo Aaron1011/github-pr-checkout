@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=This is a test!
+Icon=chrome.png
+Path=/home/aaron
+Exec=/home/aaron/github.py %u
