@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "version": "1",
+  "name": "PRCheckout",
+  "description": "Checkout a branch in your local repo - right from Github!",
+
+  "icons": {
+    "16":  "icon-16.png",
+    "48":  "icon-48.png",
+    "128": "icon-128.png"
+  },
+
+  "content_scripts": [ {
+    "js":      [ "script.js" ],
+    "matches": [ "https://github.com/*/*/pull/*" ],
+    "run_at":  "document_end"
+  } ],
+
+  "background": {
+   "scripts": ["background.js"]
+}
+}
