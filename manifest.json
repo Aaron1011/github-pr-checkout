@@ -16,7 +16,7 @@
   ],
 
   "content_scripts": [ {
-    "js":      [ "script.js" ],
+    "js":      [ "mutation-summary.js", "script.js" ],
     "matches": [ "https://github.com/*" ],
     "run_at":  "document_idle"
   } ],
