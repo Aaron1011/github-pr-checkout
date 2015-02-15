@@ -10,14 +10,19 @@
     "48":  "icon-48.png",
     "128": "icon-128.png"
   },
+  
+  "permissions": [
+	  "tabs"
+  ],
 
   "content_scripts": [ {
     "js":      [ "script.js" ],
-    "matches": [ "https://github.com/*/*/pull/*" ],
-    "run_at":  "document_end"
+    "matches": [ "https://github.com/*" ],
+    "run_at":  "document_idle"
   } ],
 
   "background": {
-   "scripts": ["background.js"]
+   "scripts": ["background.js"],
+   "persistent": false
 }
 }
